@@ -1,0 +1,159 @@
+.petCard {
+  position: relative;
+  min-width: 240px;
+  max-width: 450px;
+  padding: 16px 20px 40px;
+  margin: 0;
+  box-shadow: 3px 8px 14px rgba(136, 198, 253, 0.19);
+  border-radius: 20px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 7px 13px 14px rgba(116, 177, 232, 0.24);
+  }
+}
+
+.petCardDark {
+  background: transparent;
+  box-shadow: 3px 8px 14px rgba(136, 198, 253, 0.19);
+  border: 1px solid black;
+}
+
+.deleteBtn {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 7px 13px 14px rgba(116, 177, 232, 0.24);
+  }
+}
+
+.trashIcon {
+  stroke: #54adff;
+}
+
+.imgThumb {
+  position: relative;
+  height: 240px;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.infoTitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 0.04em;
+}
+
+.infoTitleDark {
+  color: #fff;
+}
+
+.infoDesc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.04em;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.infoDescDark {
+  color: #fff;
+}
+
+.modalTitle {
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.37;
+  letter-spacing: 0.04em;
+}
+
+.modalText {
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.37;
+  letter-spacing: 0.04em;
+}
+
+.modalTextSpan {
+  composes: modalText;
+  font-weight: 700;
+}
+
+.modalIcon {
+  margin-left: 8px;
+  stroke: #fef9f9;
+}
+
+@media screen and (min-width: 768px) {
+  .petCard {
+    display: flex;
+    max-width: 663px;
+    padding: 20px;
+  }
+
+  .imgThumb {
+    margin-right: 20px;
+    height: 128px;
+    width: 128px;
+  }
+
+  .infoDesc {
+    width: 475px;
+  }
+
+  .modalTitle {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+  }
+
+  .modalText {
+    margin-bottom: 48px;
+    font-size: 16px;
+    line-height: 1.37;
+    letter-spacing: -0.01em;
+  }
+
+  .modalTextSpan {
+    composes: modalText;
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .petCard {
+    max-width: 781px;
+  }
+
+  .infoDesc {
+    width: 515px;
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "registration": {
+    "eng": "Registration",
+    "ua": "Реєстрація"
+  },
+
+  "alreadyHaveAccount": {
+    "eng": "Already have an account?",
+    "ua": "Вже маєте аккаунт?"
+  },
+
+  "login": {
+    "eng": "Login ",
+    "ua": "Увійдіть"
+  },
+
+  "user": {
+    "eng": "user",
+    "ua": "як користувач"
+  },
+
+  "orUse": {
+    "eng": "or",
+    "ua": "або"
+  },
+
+  "google": {
+    "eng": "Sign up with Google",
+    "ua": "Продовжити з Google"
+  }
+}

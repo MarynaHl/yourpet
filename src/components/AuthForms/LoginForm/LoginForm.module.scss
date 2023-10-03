@@ -1,0 +1,33 @@
+.form {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  &:last-of-type {
+    margin-bottom: 40px;
+  }
+}
+
+.eyeIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 40%);
+  cursor: pointer;
+
+  &:hover {
+    border-radius: 50%;
+    scale: 1.2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .inputWrapper {
+    margin-bottom: 32px;
+  }
+}

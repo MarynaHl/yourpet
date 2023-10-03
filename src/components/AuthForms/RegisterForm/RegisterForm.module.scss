@@ -1,0 +1,42 @@
+.form {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  &:last-of-type {
+    margin-bottom: 40px;
+  }
+}
+
+.eyeIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 40%);
+  cursor: pointer;
+
+  &:hover {
+    scale: 1.2;
+  }
+}
+
+.differentPassords {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 14px;
+  margin-left: 16px;
+  color: #f43f5e;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .inputWrapper {
+    margin-bottom: 32px;
+  }
+}

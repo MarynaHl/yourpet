@@ -1,0 +1,26 @@
+{
+  "login": {
+    "eng": "Login",
+    "ua": "Увійти"
+  },
+
+  "dontHaveAccount": {
+    "eng": "Don't have an account?",
+    "ua": "Ще не маєте аккаунту?"
+  },
+
+  "register": {
+    "eng": "Register",
+    "ua": "Зареєструйтесь"
+  },
+
+  "orUse": {
+    "eng": "or",
+    "ua": "або"
+  },
+
+  "google": {
+    "eng": "Sign in with Google",
+    "ua": "Продовжити з Google"
+  }
+}

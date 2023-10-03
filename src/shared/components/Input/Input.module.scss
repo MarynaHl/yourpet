@@ -1,0 +1,59 @@
+.wrapper {
+  position: relative;
+}
+
+.label{display: block;
+  margin-right: auto;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #54adff;
+  border-radius: 40px;
+  font-size: 16px;
+
+  &:focus {
+    outline: none;
+    border-color: #54adff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Застосувати стилі для екранів з шириною до 768px */
+    font-size: 0.9rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    /* Застосувати стилі для екранів з шириною до 480px */
+    // width: 256px;
+    font-size: 0.8rem;
+  }
+}
+
+.invalid {
+  border-color: #f43f5e;
+}
+
+.errorMessage {
+  margin-top: 4px;
+  margin-bottom: 14px;
+  margin-left: 16px;
+  color: #f43f5e;
+  font-size: 0.8rem;
+}
+
+.secure {
+  margin-top: 4px;
+  margin-bottom: 14px;
+  margin-left: 16px;
+  color: #00C3AD;
+  font-size: 0.8rem;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 50%);
+}

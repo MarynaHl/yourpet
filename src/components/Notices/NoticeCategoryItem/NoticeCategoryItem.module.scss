@@ -1,0 +1,306 @@
+.noticeCard {
+  list-style: none;
+  max-width: 440px;
+  padding: 0;
+  margin: 0;
+  box-shadow: 3px 8px 14px rgba(136, 198, 253, 0.19);
+  border-radius: 0px 0px 40px 40px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 7px 13px 14px rgba(116, 177, 232, 0.24);
+  }
+}
+
+.noticeCardDark {
+  background: #2b3e51;
+  border: 2px solid rgba(136, 198, 253, 0.19);
+}
+
+.imgThumb {
+  position: relative;
+  height: 288px;
+}
+
+.avatar {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.topBlock {
+  position: absolute;
+  top: 12px;
+  width: 100%;
+  padding-right: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons {
+  stroke: #54adff;
+}
+
+.favoriteIcon {
+  composes: icons;
+  fill: #54adff;
+}
+
+.infoIcons {
+  composes: icons;
+  margin-right: 4px;
+}
+
+.categoryInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 126px;
+  height: 32px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.357;
+  background-color: #cce4fb;
+  border-radius: 0px 16px 16px 0px;
+}
+
+.circBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  width: 40px;
+  height: 40px;
+  background-color: #c5dff6;
+  border: none;
+  border-radius: 50%;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #9bd0ff;
+  }
+}
+
+.noticeInfoBlock {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #cce4fb;
+  color: #000000;
+  text-align: center;
+  padding: 5px 12px;
+  border-radius: 16px;
+
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #cce4fb transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.noticeInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  background-color: #cce4fb;
+  border-radius: 16px;
+}
+
+.noticeDesc {
+  padding: 20px;
+  padding-bottom: 24px;
+}
+
+.activeInfoBlock {
+  composes: noticeInfo;
+  background-color: #54adff;
+  color: #fef9f9;
+}
+
+.activeInfoIcon {
+  composes: infoIcons;
+  background-color: #54adff;
+  stroke: #ffffff;
+}
+
+.noticeTitle {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.375;
+}
+
+.noticeTitleDark {
+  color: #fef9f9;
+}
+
+.learnBtn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  padding: 8px 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.375;
+  letter-spacing: 0.04em;
+  color: #54adff;
+  background-color: transparent;
+  border: 2px solid #54adff;
+  border-radius: 40px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:before {
+    content: url('../pawprint.svg');
+    position: absolute;
+    right: 50px;
+    opacity: 0;
+    height: 24px;
+    width: 24px;
+  }
+
+  &:hover,
+  &:focus {
+    text-indent: -15px;
+    color: #fef9f9;
+    background-image: linear-gradient(290.46deg, #419ef1 0%, #9bd0ff 107.89%);
+    border: none;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:before {
+      opacity: 1;
+      text-indent: 0px;
+    }
+  }
+}
+
+.modalTitle {
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.37;
+  letter-spacing: 0.04em;
+}
+
+.modalText {
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.37;
+  letter-spacing: 0.04em;
+}
+
+.modalTextSpan {
+  composes: modalText;
+  font-weight: 700;
+}
+
+.modalIcon {
+  margin-left: 8px;
+  stroke: #fef9f9;
+}
+
+@media screen and (max-width: 767px) {
+  .noticeCard {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .noticeCard {
+    max-width: 336px;
+    flex-basis: calc((100% - 32px) / 2);
+  }
+
+  .noticeDesc {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+    min-height: 126px;
+    justify-content: space-between;
+  }
+
+  .noticeTitle {
+    text-align: start;
+  }
+
+  .learnBtn {
+    margin: 0 auto;
+  }
+
+  .modalTitle {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+  }
+
+  .modalText {
+    margin-bottom: 48px;
+    font-size: 16px;
+    line-height: 1.37;
+    letter-spacing: -0.01em;
+  }
+
+  .modalTextSpan {
+    composes: modalText;
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .noticeCard {
+    min-width: 288px;
+    flex-basis: calc((100% - 96px) / 4);
+  }
+}
