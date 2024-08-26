@@ -1,4 +1,4 @@
-# Команда Cyber Bobik презентує проект Patron-4U
+
 
 <div align="center">
   <img src="https://media.giphy.com/media/3o7abAHdYvZdBNnGZq/giphy.gif" width="400"/>
