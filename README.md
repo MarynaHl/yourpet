@@ -25,11 +25,9 @@
   <img src="https://github.com/devicons/devicon/blob/master/icons/trello/trello-plain-wordmark.svg" title="Trello" alt="Trello" width="40" height="40"/>&nbsp;
 </div>
 
-### Дякуємо за інтерес до нашого проекту!
 
-<div align="center">
-  <img src="https://media.giphy.com/media/gNMR6iYw4JHIdYno1E/giphy.gif" width="300"/>
-</div>
+
+
 
 
 
